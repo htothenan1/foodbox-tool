@@ -421,7 +421,7 @@ const IngredientCard = ({
               className="add-button"
               onClick={() => addToFoodBox(ingredient)}
             >
-              Add to Food Box
+              Add to Box
             </button>
           )}
           {/* <button className="details-button" onClick={toggleDetails}>

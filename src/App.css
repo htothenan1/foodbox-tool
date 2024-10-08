@@ -54,7 +54,7 @@ nav {
 }
 
 .food-box {
-  width: 33%;
+  width: 40%;
   padding: 0 20px;
   border-right: 2px solid #ddd;
   display: flex;
@@ -75,7 +75,6 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
-  /* padding: 10px 0; */
 }
 
 .food-box-header {
@@ -187,7 +186,7 @@ nav {
 .categories-container {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 30%;
   padding: 0 10px;
   overflow-y: auto;
 }
@@ -233,7 +232,7 @@ nav {
   display: flex;
   flex-wrap: wrap; /* Allow wrapping to a new line */
   justify-content: space-between; /* Ensure items fit without scroll */
-  padding: 4px;
+  gap: 10px; /* Add some gap between items */
 }
 
 /* Each ingredient card with spacing and responsiveness */
@@ -243,13 +242,32 @@ nav {
   margin: 4px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex: 1 0 21%; /* Flex items to fit 4 per row with spacing */
-  max-width: 21%; /* Max width to ensure no overflow */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  width: 200px; /* Fixed width for 4 per row */
+  height: 200px; /* Fixed height */
+}
+
+/* Responsive layout - adjust from 4 per row to 3 per row */
+@media screen and (max-width: 1200px) {
+  .ingredient-card {
+    width: 30%; /* Adjust to 3 per row on medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ingredient-card {
+    width: 45%; /* Adjust to 2 per row on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ingredient-card {
+    width: 100%; /* Full width on very small screens */
+  }
 }
 
 /* Star button remains at the top-right corner */
