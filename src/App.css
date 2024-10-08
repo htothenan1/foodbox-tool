@@ -273,8 +273,8 @@ nav {
 /* Star button remains at the top-right corner */
 .favorite-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 5px;
+  right: 5px;
   background: none;
   border: none;
   cursor: pointer;

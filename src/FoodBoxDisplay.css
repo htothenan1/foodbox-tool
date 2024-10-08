@@ -3,7 +3,7 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  width: 100%; /* Full width */
+  /* width: 100%; */
   margin: 0; /* Remove any centering or external margins */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -114,6 +114,6 @@
 /* Responsive for smaller screens */
 @media (max-width: 900px) {
   .food-box-data-grid {
-    grid-template-columns: 1fr; /* Stack sections vertically on smaller screens */
+    grid-template-columns: 1fr;
   }
 }

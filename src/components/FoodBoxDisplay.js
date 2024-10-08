@@ -112,7 +112,7 @@ const FoodBoxDisplay = ({ foodBoxCode }) => {
     <div className="food-box-display">
       <div className="header-with-button">
         <div>
-          <h2 className="section-title">Food Box ID: {foodBoxCode}</h2>
+          <h2 className="section-title">Feedback for ID: {foodBoxCode}</h2>
           {foodBoxData && (
             <p>
               Date Created:{" "}

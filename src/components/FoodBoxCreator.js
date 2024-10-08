@@ -216,7 +216,7 @@ function FoodBoxCreator() {
         {/* Header and Buttons Section */}
         <div className="food-box-header-section sticky-header">
           <div className="food-box-header">
-            <h2>Your Food Box ({foodBoxItems.length})</h2>
+            <h2>Checkout ({foodBoxItems.length})</h2>
             <button className="refresh-button" onClick={handleRefresh}>
               &#x21bb;
             </button>
@@ -421,7 +421,7 @@ const IngredientCard = ({
               className="add-button"
               onClick={() => addToFoodBox(ingredient)}
             >
-              Add to Box
+              Add Item
             </button>
           )}
           {/* <button className="details-button" onClick={toggleDetails}>
