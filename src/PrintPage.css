@@ -1,0 +1,93 @@
+/* Styles for the Print Page */
+.print-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.qr-code-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 0; /* No gap, using borders for perforation */
+  justify-content: center;
+}
+
+/* QR code container */
+.qr-code-print-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+}
+
+.qr-code-print-item p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Perforated vertical line in the middle */
+.qr-code-grid .qr-code-print-item:nth-child(odd) {
+  border-right: 1px dotted rgba(0, 0, 0, 0.2); /* Subtle dotted line between columns */
+}
+
+/* Perforated horizontal line between rows */
+.qr-code-grid .qr-code-print-item {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.2); /* Subtle dotted line between rows */
+}
+
+/* Remove border from the last row */
+.qr-code-grid .qr-code-print-item:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+/* CTA buttons container */
+.cta-buttons {
+  margin-bottom: 20px;
+}
+
+.back-button,
+.print-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.back-button:hover,
+.print-button:hover {
+  background-color: #45a049;
+}
+
+/* PRINT SPECIFIC STYLES */
+
+/* Hide unnecessary elements during print */
+@media print {
+  /* Hide everything except the qr-code-grid */
+  body * {
+    visibility: hidden; /* Hide all elements */
+  }
+
+  .print-page,
+  .print-page * {
+    visibility: visible; /* Make QR codes visible */
+  }
+
+  .cta-buttons {
+    display: none; /* Hide buttons during printing */
+  }
+
+  .print-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    page-break-before: auto;
+    page-break-after: auto;
+  }
+}

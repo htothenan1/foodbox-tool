@@ -1,0 +1,124 @@
+/* Feedback Page Styles */
+.feedback-content {
+  display: flex;
+  height: 80vh;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Left section for Food Box IDs (matches category styling but separate) */
+.feedback-categories-container {
+  width: 20%;
+  padding: 20px;
+  background-color: #fff;
+  border-right: 2px solid #ddd;
+  overflow-y: auto;
+}
+
+/* New Styles for the Vertical Food Box List */
+.foodbox-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.foodbox-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+}
+
+.foodbox-item:hover {
+  background-color: #e0e0e0;
+}
+
+.selected {
+  background-color: #d8d8d8;
+  /* Optional: you can add additional styling to highlight the selected item */
+}
+
+/* Right section for Feedback Display */
+.feedback-box-logs {
+  width: 80%;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.feedback-box-display {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.loading-message,
+.error-message {
+  font-size: 16px;
+  color: red;
+}
+
+.food-box-data {
+  margin-top: 20px;
+}
+
+.items-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.items-list li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.reason {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #b22222;
+}
+
+.reason strong {
+  color: #333;
+}
+
+/* Custom select dropdown styling */
+.custom-select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #5fa8d3;
+  box-shadow: 0 0 8px rgba(95, 168, 211, 0.6);
+}
+
+.custom-select option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}

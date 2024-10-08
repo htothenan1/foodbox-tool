@@ -1,0 +1,61 @@
+.print-page {
+  padding: 20px;
+  font-family: monospace;
+}
+
+.receipt {
+  border: 1px dashed black;
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Add styles for the FeedLink logo and title within the receipt */
+.receipt-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.receipt-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1b4965;
+}
+
+.receipt h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.receipt-items {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.receipt-items li {
+  margin-bottom: 5px;
+}
+
+.qr-code-receipt {
+  text-align: center;
+}
+
+.qr-code-receipt p {
+  margin-bottom: 10px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
