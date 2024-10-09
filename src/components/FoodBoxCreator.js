@@ -13,6 +13,7 @@ import {
   IconBottle,
   IconPepper,
   IconEggs,
+  IconRefresh,
 } from "@tabler/icons-react"
 import { ingredients } from "../data/ingredients"
 import {
@@ -218,7 +219,7 @@ function FoodBoxCreator() {
           <div className="food-box-header">
             <h2>Checkout ({foodBoxItems.length})</h2>
             <button className="refresh-button" onClick={handleRefresh}>
-              &#x21bb;
+              <IconRefresh />
             </button>
           </div>
 
