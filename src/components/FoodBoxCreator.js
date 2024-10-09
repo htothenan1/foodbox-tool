@@ -254,7 +254,7 @@ function FoodBoxCreator() {
           <div className="food-box-list">
             {foodBoxItems.length === 0 ? (
               <div>
-                <p>No items added yet</p>
+                <p className="no-items">No items added yet</p>
                 <select
                   className="custom-select"
                   onChange={(e) => handleTemplateSelection(e.target.value)}

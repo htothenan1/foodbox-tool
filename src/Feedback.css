@@ -122,3 +122,7 @@
   background-color: #fff;
   color: #333;
 }
+
+.no-items {
+  font-size: 18px;
+}
