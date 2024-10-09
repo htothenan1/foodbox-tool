@@ -54,7 +54,7 @@ nav {
 }
 
 .food-box {
-  width: 45%;
+  width: 40%;
   padding: 0 20px;
   border-right: 2px solid #ddd;
   display: flex;
@@ -81,7 +81,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .refresh-button {
@@ -101,7 +101,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .generate-code-button,
@@ -231,9 +231,9 @@ nav {
 /* Ingredient Flex Layout */
 .ingredient-grid {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping to a new line */
-  justify-content: space-between; /* Ensure items fit without scroll */
-  gap: 10px; /* Add some gap between items */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5px;
 }
 
 /* Each ingredient card with spacing and responsiveness */
@@ -248,27 +248,8 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  width: 200px; /* Fixed width for 4 per row */
-  height: 200px; /* Fixed height */
-}
-
-/* Responsive layout - adjust from 4 per row to 3 per row */
-/* @media screen and (max-width: 1200px) {
-  .ingredient-card {
-    width: 30%; 
-  }
-} */
-
-@media screen and (max-width: 768px) {
-  .ingredient-card {
-    width: 45%; /* Adjust to 2 per row on smaller screens */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .ingredient-card {
-    width: 100%; /* Full width on very small screens */
-  }
+  width: 200px;
+  height: 200px;
 }
 
 /* Star button remains at the top-right corner */

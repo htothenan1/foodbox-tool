@@ -34,7 +34,7 @@ function Feedback() {
     <div className="feedback-content">
       {/* Left section: Food Box IDs (styled like category tabs) */}
       <div className="feedback-categories-container">
-        <h3>Published IDs</h3>
+        <h2>Published IDs</h2>
         {isLoading ? (
           <p>Loading IDs...</p>
         ) : error ? (
