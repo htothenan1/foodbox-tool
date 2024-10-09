@@ -32,7 +32,6 @@ function Feedback() {
 
   return (
     <div className="feedback-content">
-      {/* Left section: Food Box IDs (styled like category tabs) */}
       <div className="feedback-categories-container">
         <h2>Published IDs</h2>
         {isLoading ? (
@@ -61,7 +60,7 @@ function Feedback() {
         {foodBoxCode ? (
           <FoodBoxDisplay foodBoxCode={foodBoxCode} />
         ) : (
-          <p>Select a food box to see the feedback</p>
+          <p>Select an ID to see the feedback</p>
         )}
       </div>
     </div>

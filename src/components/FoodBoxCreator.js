@@ -261,7 +261,7 @@ function FoodBoxCreator() {
                   value={selectedTemplate}
                 >
                   <option value="" disabled>
-                    Select a food box template
+                    Choose from Template
                   </option>
                   {Object.keys(foodBoxTemplates).map((template, index) => (
                     <option key={index} value={template}>
