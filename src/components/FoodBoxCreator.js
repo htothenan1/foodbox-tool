@@ -398,7 +398,7 @@ const IngredientCard = ({
     <div className="ingredient-card">
       {/* Star button in the top-right corner */}
       <button className="favorite-button" onClick={toggleFavorite}>
-        {isFavorite ? <IconStarFilled size={24} /> : <IconStar size={24} />}
+        {isFavorite ? <IconStarFilled size={28} /> : <IconStar size={28} />}
       </button>
 
       <div className="ingredient-header">
