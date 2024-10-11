@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/food-box-creator" element={<FoodBoxCreator />} />
           <Route path="/feedback" element={<Feedback />} />
-          <Route path="/" element={<FoodBoxDisplay />} />
+          {/* <Route path="/" element={<FoodBoxCreator />} /> */}
           <Route path="/print/:foodBoxCode" element={<PrintPage />} />
           <Route path="/receipt/:foodBoxCode" element={<ReceiptPrintPage />} />
           <Route path="/" element={<FoodBoxCreator />} />

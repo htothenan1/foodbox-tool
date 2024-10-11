@@ -29,7 +29,7 @@ const PrintPage = () => {
       </div>
 
       <div className="qr-code-grid">
-        {[...Array(8)].map((_, index) => (
+        {[...Array(10)].map((_, index) => (
           <div key={index} className="qr-code-print-item">
             <p>{foodBoxCode}</p> {/* Print the 5-digit code above QR code */}
             <QRCodeSVG value={foodBoxCode} size={90} />

@@ -28,6 +28,7 @@ import {
   culturallyDiverseBox,
   comfortFoodBox,
 } from "../data/foodBoxes"
+import { useNavigate } from "react-router-dom"
 import greenApple from "../assets/green_apple.png"
 import yellowPasta from "../assets/yellow_pasta.png"
 import redDoughnut from "../assets/red_doughnut.png"
@@ -86,6 +87,7 @@ function FoodBoxCreator() {
   const ingredientsListRef = useRef(null)
   const [selectedTemplate, setSelectedTemplate] = useState("")
   const [customTemplates, setCustomTemplates] = useState([])
+  const navigate = useNavigate()
 
   useEffect(() => {
     const fetchCustomTemplates = async () => {
@@ -159,6 +161,10 @@ function FoodBoxCreator() {
     setIsBoxLocked(true)
   }
 
+  const handleReceiptClick = () => {
+    navigate(`/receipt/${generatedCode}`)
+  }
+
   const handlePublishBox = async () => {
     try {
       const itemsToSend = foodBoxItems.map((item) => item.name)
@@ -214,7 +220,6 @@ function FoodBoxCreator() {
   return (
     <div className="App-content">
       <div className="food-box">
-        {/* Header and Buttons Section */}
         <div className="food-box-header-section sticky-header">
           <div className="food-box-header">
             <h2>Checkout ({foodBoxItems.length})</h2>
@@ -245,7 +250,12 @@ function FoodBoxCreator() {
                 Confirm and Publish
               </button>
             ) : (
-              <p className="publish-confirmation">Success!</p>
+              <button
+                className="publish-box-button"
+                onClick={handleReceiptClick}
+              >
+                Customer Receipt
+              </button>
             )}
           </div>
         </div>

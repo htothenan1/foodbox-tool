@@ -58,7 +58,7 @@ const ReceiptPrintPage = () => {
     <div className="print-page">
       <div className="cta-buttons">
         <button onClick={handleBack} className="back-button">
-          Back to Food Box Display
+          Go Back
         </button>
         <button onClick={handlePrint} className="print-button">
           Print Receipt
